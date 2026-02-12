@@ -1,0 +1,21 @@
+# Environment & UI
+python-dotenv
+streamlit
+
+# AI & LLM Integration
+langchain
+langchain-core
+langchain-classic
+langchain-community
+langchain-groq
+langchain-huggingface
+
+# Document Processing & Text Splitting
+langchain-text-splitters
+unstructured[pdf]
+pdf2image
+pytesseract
+
+# Vector Database & Embeddings
+langchain-chroma
+sentence-transformers
