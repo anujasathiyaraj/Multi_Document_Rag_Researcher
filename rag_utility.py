@@ -15,10 +15,8 @@ load_dotenv()
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Using a consistent embedding model
 embedding = HuggingFaceEmbeddings()
 
-# CRITICAL: Temperature=0 ensures deterministic, non-creative responses
 llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 
 def process_documents_to_chroma_db(file_paths):
