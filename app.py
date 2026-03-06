@@ -57,7 +57,6 @@ if user_input:
             with st.spinner("Searching strictly within documents..."):
                 chain = get_rag_chain(st.session_state.retriever)
                 
-                # Format history for LangChain LCEL
                 formatted_history = [
                     (msg["role"], msg["content"]) for msg in st.session_state.chat_history
                 ]
